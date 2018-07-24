@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /test.html
+Host: https://a510.ru
+Sitemap: https://a510.ru/sitemap.xml

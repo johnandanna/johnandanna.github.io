@@ -1,0 +1,27 @@
+plugins:
+  - jekyll-seo-tag
+  - jekyll-redirect-from
+
+collections:
+  proekty:
+    output: true
+  portfolio:
+    output: true
+
+social:
+  name: А510
+  links:
+    - https://www.facebook.com/a510ru
+    - http://instagram.com/a510ru
+    - https://plus.google.com/111533556890655071026
+
+logo: /images/logo2.svg
+
+title: ""
+
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      image: /images/banners/dupleksy.jpg
