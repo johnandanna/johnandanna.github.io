@@ -2041,15 +2041,7 @@
 		padding-bottom: 0.25em;
 	}
 	
-		header h1:after, header h2:after{
-			content: '';
-			position: absolute;
-			background-color: #100e11;
-			height: 1px;
-			width: 100%;
-			left: 0%;
-			top: 100%;
-		}
+
 		
 			.front header h1, .front header h2{
 				padding-bottom: 1em;
@@ -2600,7 +2592,7 @@
 			@media screen and (max-width: 480px) {
 
 				ul.actions {
-					margin: 0 0 4em 0;
+					margin: 0 0 1em 0;
 				}
 
 					ul.actions li {
@@ -2995,6 +2987,7 @@
 @media screen and (max-width: 980px) {
 	.inner-slide {
 		padding: 1em;
+		font-size:80%;
 	}
 }
 .slide1 {
@@ -3050,12 +3043,12 @@
 	@media screen and (max-width: 480px) {
 			
 			.slide1 h1 {
-				font-size: 1.5em;
+				font-size: 1.25em;
 			}
 			
 			.slide1 h2 {
-				font-size: 2em;
-				margin-bottom: 1em;
+				font-size: 1.5em;
+				margin-bottom: 0;
 			}
 		}
 		
