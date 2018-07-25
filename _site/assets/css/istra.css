@@ -1,6 +1,6 @@
 @charset "UTF-8";
 @import url(font-awesome.min.css);
-@import 'https://fonts.googleapis.com/css?family=Open+Sans:400,600&subset=cyrillic';
+@import url('https://fonts.googleapis.com/css?family=Petit+Formal+Script');
 
 @font-face {
 	font-family: 'Helvetica Neue Cyr Roman';
@@ -1869,11 +1869,12 @@
 	}
 
 	h1, h2, h3, h4, h5, h6 {
-		font-weight: 400;
+		font-weight: 700;
 		line-height: 1.5;
 		margin: 0 0 1em 0;
-		text-transform: uppercase;
+		text-transform: none;
 		letter-spacing: 0.05em;
+		font-family: 'Petit Formal Script';
 	}
 
 		h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
@@ -1902,7 +1903,7 @@
 		}
 		
 	h2 {
-		font-size: 1.75em;
+		font-size: 2em;
 	}
 	
 		@media screen and (max-width: 480px) {
@@ -2969,12 +2970,21 @@
 /* LONDON */
 	
 .inner-slide {
-	margin: 2em 3em 0 0;
+	background: rgba(255,255,255,0.9);
+	padding: 2em 10em;
+}
+
+.slide {
+	
 }
 
 	@media screen and (max-width: 980px) {
-		.inner-slide > h3, .inner-slide > p, .inner-slide > ul {
-			display: none;
+		span {
+			display: none !important;
+		}
+		
+		.not-small {
+			display:none !important;
 		}
 		
 		.inner-slide > .sm {
@@ -2984,26 +2994,35 @@
 
 @media screen and (max-width: 980px) {
 	.inner-slide {
-		margin: 1em 1em 0 1em;
+		padding: 1em;
 	}
 }
 .slide1 {
-	background: url("/images/istra/slide1-alt.jpg") center / cover;
+	background: url("/images/istra/slide1-alt2.jpg") center bottom / cover;
+	height: 90%;
+    width: 95%;
+    margin: auto;
+    border: solid 1px #000;
+	display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+	align-items: center;
+	padding-top: 3em;
 }
 		
 	.slide1 h1, .slide1 h2 {
-		color: #fff;
+		color: #000;
 		letter-spacing:0.05em;
 		text-align: center;
 	}
 	
 	.slide1 h1 {
-		font-size: 4em;
+		font-size: 1.5em;
 	}
 	
 	.slide1 h2 {
-		font-size: 5em;
-		margin-bottom:3em;
+		font-size: 2em;
+		margin-bottom: 0;
 	}
 	
 	@media screen and (max-width: 980px) {
@@ -3030,10 +3049,6 @@
 
 	@media screen and (max-width: 480px) {
 			
-			.slide1 {
-				background: url("/images/istra/slide1-alt_v.jpg") center / cover;
-			}
-			
 			.slide1 h1 {
 				font-size: 1.5em;
 			}
@@ -3044,60 +3059,36 @@
 			}
 		}
 		
-.slide2 {
-	
+.slide-all {
+	background: none;
+	height:100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	background-repeat: no-repeat;
 }
-	.alt2 {
-		margin:1em 0 0 3.5em;
-	}
 	
-		.alt2 li {
-			margin-bottom:0;
-			padding-bottom:0 !important;
+	@media screen and (max-width: 980px) {
+		.slide2 {
+			background: url(/images/istra/slide2.jpg) center / contain no-repeat;
+			
+		}
+		.slide3 {
+			background: url(/images/istra/slide3.jpg) center / contain no-repeat;
+			
+		}
+		.slide4 {
+			background: url(/images/istra/slide4.jpg) center / contain no-repeat;
+			
+		}
+		.slide5 {
+			background: url(/images/istra/slide5.jpg) center / contain no-repeat;
+			
 		}
 		
-	.alt3 {
-		margin:0 0 1em 3.5em;
-	}
-	
-		.alt3 li {
-			margin-bottom:0;
-			padding-bottom:0 !important;
-		}
-		
-	.alt10 {
-		margin:1em 0 1em 0;
-	}
-	
-		.alt10 li {
-			margin-bottom:0;
-			padding-bottom:0 !important;
-		}
-	
-	.slide2 span, .slide3 span {
-		height: 2em;
-		width: 2em;
-		display: inline-block;
-		border-radius: 1em;
-		margin-right: 1em;
-		vertical-align: bottom;
-	}
-	
-	.slide2 ul h3 {
-		display: inline;
-	}
-	
-	.slide2 ul p {
-		margin: 1em 0 1em 3.5em;
-		text-align: left;
 	}
 	
 	
-	@media screen and (max-width: 480px) {
-		.slide2 ul:not(.alt10) {
-			font-size: 0.75em;
-		}
-	}
 .slide3 {
 	
 }
