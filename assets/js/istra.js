@@ -35,6 +35,12 @@
 				}
 			}
 		});
+		
+		skel.layout({
+			grid: true,
+			containers: true
+		});
+
 
 	// Disable animations/transitions until everything's loaded.
 		$body.classList.add('is-loading');
